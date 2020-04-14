@@ -5,16 +5,20 @@
   <groupId>com.edureka</groupId>
   <artifactId>maven_repo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <repositories>
-    <repository>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <id>central</id>
-      <name>Central Repository</name>
-      <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-  </repositories>
+   <scm>
+<connection>scm:https://github.com/aparnadevu2/maven_repo.git/</connection>
+<developerConnection>scm:https://github.com/aparnadevu2/maven_repo.git/</developerConnection>
+</scm>
+ <distributionManagement>
+ <repository>
+    <id>maven_repo-release</id>
+    <url>http://localhost:8081/nexus/content/repositories/maven_repo-release</url>
+  </repository>>
+   <snapshotRepository>
+    <id>maven_repo-snapshot</id>
+    <url>http://localhost:8081/nexus/content/repositories/maven_repo-snapshot</url>
+  </snapshotRepository>
+</distributionManagement>
   <pluginRepositories>
     <pluginRepository>
       <releases>
